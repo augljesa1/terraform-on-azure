@@ -1,0 +1,21 @@
+
+resource_group_location = "westeurope"
+location                = "westeurope"
+resource_group_name     = "aks-cluster-rg"
+resource_group_tag      = "Dev"
+cluster_tag             = "Dev"
+cluster_name            = "dev-aks-cluster"
+dns_prefix              = "myakscluster"
+node_pool_name          = "devpool"
+vm_size                 = "Standard_DS2_v2"
+node_count              = 3
+availability_zones      = ["1", "2", "3"]
+autoscaling_enabled     = true
+min_nodes               = 1
+max_nodes               = 3
+os_disk_size_gb         = 30
+os_disk_type            = "Ephemeral"
+enable_node_public_ip = false
+enable_ultra_ssd      = false
+max_pods              = 30
+cpu_manager_policy    = "static"
